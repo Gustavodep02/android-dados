@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="@string/autor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/spQTD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbD4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d4" />
+
+        <RadioButton
+            android:id="@+id/rbD6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d6" />
+
+        <RadioButton
+            android:id="@+id/rbD8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d8" />
+
+        <RadioButton
+            android:id="@+id/rbD10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d10" />
+
+        <RadioButton
+            android:id="@+id/rbD12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d12" />
+
+        <RadioButton
+            android:id="@+id/rbD20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d20" />
+
+        <RadioButton
+            android:id="@+id/rbD100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/d100" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spQTD"
+        android:layout_width="409dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="246dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSortear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="@string/btnSortear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spQTD" />
+
+    <TextView
+        android:id="@+id/tvSaida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSortear" />
+</androidx.constraintlayout.widget.ConstraintLayout>
